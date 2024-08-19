@@ -54,3 +54,16 @@ Sistema Operacional: Ubuntu 24.04 LTS
         #Acessar Dashboard:
         http://192.168.0.10:1880/ui
     ```
+* Configuracao Node Red:
+    
+    ![Dashboard](Imagens/Dashboard.png)
+    ![Fluxo](Imagens/Fluxo.png)
+    ![Configuracao Broker](Imagens/Configuracao_Broker.png)
+    ![Configuracao Topico](Imagens/Configuracao_Topico.png)
+    ![Extrair Temperatura](Imagens/Extrair_Temperatura.png)
+    ![Grafico Temperatura](Imagens/Grafico_Temperatura.png)
+    ![Texto Temperatura](Imagens/Texto_Temperatura.png)
+    ![Extrair Umidade](Imagens/Extrair_Umidade.png)
+    ![Grafico Umidade](Imagens/Grafico_Umidade.png)
+    ![Texto Umidade](Imagens/Texto_Umidade.png)
+    ![Medidor Umidade](Imagens/Medidor_Umidade.png)

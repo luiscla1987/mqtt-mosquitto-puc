@@ -3,7 +3,7 @@ from datetime import datetime
 
 mqttBroker = '192.168.0.10'
 port = 1884
-topic = "\\Aula02\\Luis-Claudio\\"
+topic = "/Aula02/Luis-Claudio/"
 username = 'luis'
 password = '123456'
 

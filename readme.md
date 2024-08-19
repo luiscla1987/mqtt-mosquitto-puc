@@ -42,3 +42,15 @@ Sistema Operacional: Ubuntu 24.04 LTS
 * Requisitos:
     - Configurar a VM para operar na mesma faixa de IP:
     - Instalar a biblioteca Paho MQTT - _pip install paho-mqtt_
+
+* Instalar Node Red:
+    ```bash
+        bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+        #Colocar o servico para rodar automaticamente
+        node-red-pi --max-old-space-size=256
+
+        #Acessar Node Red:
+        http://192.168.0.10:1880
+        #Acessar Dashboard:
+        http://192.168.0.10:1880/ui
+    ```

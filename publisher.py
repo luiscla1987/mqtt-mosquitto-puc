@@ -1,10 +1,12 @@
 import paho.mqtt.client as mqtt
 from datetime import datetime
 import time
+from random import randint
+import json
 
 mqttBroker = '192.168.0.10'
 port = 1884
-topic = "\\Aula02\\Luis-Claudio\\"
+topic = "/Aula02/Luis-Claudio/"
 username = 'luis'
 password = '123456'
 
@@ -24,6 +26,7 @@ client.connect(mqttBroker, port)
 while True:
     topic_now = topic + str(datetime.now().hour)
     print("TOPIC: ",topic_now)
-    (rc, mid) = client.publish(topic_now, "Testando: " + str(datetime.now().second), qos=1)
+    publish_msg = json.dumps({"temperature":randint(0,60), "humidity":str(randint(0,100))})
+    (rc, mid) = client.publish(topic_now, publish_msg, qos=1)
     time.sleep(30)
 
